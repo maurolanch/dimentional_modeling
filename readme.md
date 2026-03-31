@@ -123,6 +123,7 @@ Example:
 - ✅ Separation of concerns (models vs analysis)
 - ✅ Lightweight & fast (DuckDB)
 - ✅ Production-like structure
+
 🎯 What This Project Demonstrates
 - Data modeling (star schema)
 - ETL/ELT pipeline design
@@ -130,14 +131,15 @@ Example:
 - Python orchestration
 - File-based data ingestion
 - Analytical thinking
+
 🔥 Future Improvements
 - Add Airflow orchestration
 - Convert to dbt project
 - Add data quality checks
 - Implement incremental loads
 - Add logging & monitoring (Datadog style)
-👤 Author
 
+👤 Author
 Mauricio Lancheros
 Data Engineer
 
