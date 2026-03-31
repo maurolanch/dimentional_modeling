@@ -82,27 +82,29 @@ project/
 ```
 🚀 How It Works
 1. Load Raw Data
-Automatically detects CSV files in /data
-Loads them into DuckDB as raw_* tables
-Uses idempotent logic (CREATE OR REPLACE)
+- Automatically detects CSV files in /data
+- Loads them into DuckDB as raw_* tables
+- Uses idempotent logic (CREATE OR REPLACE)
 2. Build Data Models
 Creates:
-dim_customers
-dim_products
-dim_date
-fct_order_items
+- dim_customers
+- dim_products
+- dim_date
+- fct_order_items
 Implements a star schema:
-Fact table with surrogate keys
-Dimension tables for analytics
+- Fact table with surrogate keys
+- Dimension tables for analytics
 3. Run Analysis
 
 Executes SQL queries and exports results to CSV:
 
-📊 Sales by month
-🏆 Top products
-📅 Weekend vs weekday analysis
+- 📊 Sales by month
+- 🏆 Top products
+- 📅 Weekend vs weekday analysis
+
 ▶️ Run the Pipeline
-python main.py
+- python main.py
+
 📦 Outputs
 
 Results are saved in:
@@ -111,28 +113,29 @@ outputs/
 
 Example:
 
-q1_sales_by_month.csv
-q2_top_products.csv
-q3_weekend_analysis.csv
+- q1_sales_by_month.csv
+- q2_top_products.csv
+- q3_weekend_analysis.csv
+
 🧠 Key Features
-✅ Idempotent pipeline (safe to rerun)
-✅ Modular SQL-based transformations
-✅ Separation of concerns (models vs analysis)
-✅ Lightweight & fast (DuckDB)
-✅ Production-like structure
+- ✅ Idempotent pipeline (safe to rerun)
+- ✅ Modular SQL-based transformations
+- ✅ Separation of concerns (models vs analysis)
+- ✅ Lightweight & fast (DuckDB)
+- ✅ Production-like structure
 🎯 What This Project Demonstrates
-Data modeling (star schema)
-ETL/ELT pipeline design
-SQL analytics
-Python orchestration
-File-based data ingestion
-Analytical thinking
+- Data modeling (star schema)
+- ETL/ELT pipeline design
+- SQL analytics
+- Python orchestration
+- File-based data ingestion
+- Analytical thinking
 🔥 Future Improvements
-Add Airflow orchestration
-Convert to dbt project
-Add data quality checks
-Implement incremental loads
-Add logging & monitoring (Datadog style)
+- Add Airflow orchestration
+- Convert to dbt project
+- Add data quality checks
+- Implement incremental loads
+- Add logging & monitoring (Datadog style)
 👤 Author
 
 Mauricio Lancheros
