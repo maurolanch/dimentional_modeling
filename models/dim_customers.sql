@@ -24,7 +24,3 @@ SELECT
     last_login
 
 FROM raw_customers;
-
-SELECT * FROM dim_customers LIMIT 5;
-
-SELECT COUNT(*) FROM dim_customers;

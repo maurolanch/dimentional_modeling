@@ -48,9 +48,3 @@ SELECT
     END AS is_weekend
 
 FROM dates;
-
-SELECT COUNT(*) FROM dim_date;
-
-SELECT MIN(full_date), MAX(full_date) FROM dim_date;
-
-SELECT * FROM dim_date LIMIT 5;
